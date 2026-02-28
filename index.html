@@ -3,288 +3,237 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jouwie Bakes | Ambachtelijke Bakkerij</title>
+  <title>Hajar's Kitchen | Leiden</title>
   <link rel="stylesheet" href="website.css" />
 </head>
+
 <body>
 
   <!-- Header -->
-  <header class="site-header">
+  <header class="header" id="top">
     <nav class="nav">
-      <a class="logo" href="#home">Jouwie<span>Bakes</span></a>
+      <a class="logo" href="#top" aria-label="Terug naar boven">
+        Hajar's <span>Kitchen</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Menu openen/sluiten" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
       <ul class="nav-links">
-        <li><a href="#about">Over ons</a></li>
-        <li><a href="#menu">Assortiment</a></li>
-        <li><a href="#custom">Bestellen</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a class="btn btn-small" href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#menu">Menu</a></li>
+        <li><a class="nav-link" href="#gallery">Foto’s</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="btn btn-small" href="#contact">Bestel</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero -->
-  <main id="home">
-    <section class="hero">
-      <div class="hero-content">
-        <p class="tag">Vers • Handgemaakt • Liefde in elke bite</p>
-        <h1>Ambachtelijke baksels voor elke gelegenheid</h1>
-        <p class="subtitle">
-          Van koekjes tot taarten — perfect voor cadeaus, feestjes en cravings.
-        </p>
-        <div class="hero-actions">
-          <a class="btn" href="#menu">Bekijk assortiment</a>
-          <a class="btn btn-ghost" href="#custom">Custom bestelling</a>
-        </div>
+  <section class="hero">
+    <div class="hero-overlay"></div>
 
-        <div class="hero-badges">
-          <div class="badge">
-            <strong>24–48u</strong>
-            <span>afhalen (op aanvraag)</span>
-          </div>
-          <div class="badge">
-            <strong>Halal</strong>
-            <span>ingrediënten (vraag info)</span>
-          </div>
-          <div class="badge">
-            <strong>Custom</strong>
-            <span>smaken & thema’s</span>
-          </div>
-        </div>
+    <div class="hero-text">
+      <p class="pill">Leiden • Afhalen op afspraak</p>
+      <h1>Vers, warm & met liefde gemaakt</h1>
+      <p>Pizza • Msemen • Cheesecakes</p>
+
+      <div class="hero-actions">
+        <a href="#menu" class="btn">Bekijk menu</a>
+        <a href="#gallery" class="btn btn-ghost">Bekijk foto’s</a>
       </div>
 
-      <div class="hero-card">
-        <div class="card">
-          <h3>Populair deze week</h3>
-          <ul class="list">
-            <li>🍪 Cookie box (6 stuks)</li>
-            <li>🍰 Mini cheesecake cups</li>
-            <li>🧁 Cupcakes (thema)</li>
-          </ul>
-          <a class="btn btn-small" href="#custom">Bestel nu</a>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>Handgemaakt</strong>
+          <span>kleine batches</span>
+        </div>
+        <div class="stat">
+          <strong>Vers</strong>
+          <span>dagelijks bereid</span>
+        </div>
+        <div class="stat">
+          <strong>Custom</strong>
+          <span>op aanvraag</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="section-head">
-        <h2>Over Jouwie Bakes</h2>
-        <p>
-          Een kleine bakkerij met grote liefde voor smaak, kwaliteit en mooie details.
-        </p>
+  <!-- Highlights -->
+  <section class="section section-tight">
+    <div class="highlights">
+      <div class="highlight-card">
+        <h3>⭐ Populair</h3>
+        <p>Msemen met honing + muntthee vibe.</p>
       </div>
+      <div class="highlight-card">
+        <h3>🍰 Cheesecakes</h3>
+        <p>Pistache of framboos — creamy & luxe.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🍕 Pizza</h3>
+        <p>Cheesy, crispy crust, rijk belegd.</p>
+      </div>
+    </div>
+  </section>
 
-      <div class="grid-2">
-        <div class="panel">
-          <h3>Onze belofte</h3>
-          <p>
-            We bakken in kleine batches zodat alles vers is. We gebruiken fijne ingrediënten
-            en maken elke bestelling met zorg — alsof het voor familie is.
-          </p>
-          <ul class="checklist">
-            <li>Vers gebakken</li>
-            <li>Custom decor & thema</li>
-            <li>Perfect als cadeau</li>
-          </ul>
+  <!-- Menu -->
+  <section id="menu" class="section">
+    <div class="section-head">
+      <h2>Ons Menu</h2>
+      <p>Klik op “Bestel via WhatsApp” om snel te bestellen.</p>
+    </div>
+
+    <div class="products">
+
+      <article class="card">
+        <div class="img-wrap">
+          <img src="images/pizza.jpg" alt="Pizza">
+          <span class="tag">Pizza</span>
         </div>
-
-        <div class="panel highlight">
-          <h3>Opening (voorbeeld)</h3>
-          <p class="muted">Pas dit aan naar jouw tijden / locatie.</p>
-          <div class="hours">
-            <div><span>Ma–Vr</span><span>10:00 – 18:00</span></div>
-            <div><span>Za</span><span>10:00 – 16:00</span></div>
-            <div><span>Zo</span><span>Gesloten</span></div>
-          </div>
-          <p class="muted">📍 Den Haag • Afhalen op afspraak</p>
+        <h3>Pizza</h3>
+        <p>Vers deeg, rijk belegd & heerlijk cheesy.</p>
+        <div class="card-bottom">
+          <span class="price">v.a. €9,50</span>
+          <button class="order-btn"
+            data-product="Pizza"
+            data-price="v.a. €9,50">Bestel via WhatsApp</button>
         </div>
-      </div>
-    </section>
+      </article>
 
-    <!-- Menu -->
-    <section id="menu" class="section alt">
-      <div class="section-head">
-        <h2>Assortiment</h2>
-        <p>Kies jouw favoriet. (Prijzen zijn voorbeelden.)</p>
-      </div>
-
-      <div class="cards">
-        <article class="product">
-          <div class="product-top">
-            <h3>Cookie Box</h3>
-            <span class="price">€12,50</span>
-          </div>
-          <p>6 cookies • mix van smaken • mooi verpakt</p>
-          <div class="pill-row">
-            <span class="pill">Choco</span>
-            <span class="pill">Red velvet</span>
-            <span class="pill">Pistache</span>
-          </div>
-        </article>
-
-        <article class="product">
-          <div class="product-top">
-            <h3>Mini Cheesecake Cups</h3>
-            <span class="price">€15,00</span>
-          </div>
-          <p>6 cups • creamy • verschillende toppings</p>
-          <div class="pill-row">
-            <span class="pill">Aardbei</span>
-            <span class="pill">Lotus</span>
-            <span class="pill">Oreo</span>
-          </div>
-        </article>
-
-        <article class="product">
-          <div class="product-top">
-            <h3>Cupcakes (Thema)</h3>
-            <span class="price">v.a. €18,00</span>
-          </div>
-          <p>6–12 stuks • thema kleuren • naam/tekst mogelijk</p>
-          <div class="pill-row">
-            <span class="pill">Verjaardag</span>
-            <span class="pill">Eid</span>
-            <span class="pill">Bruiloft</span>
-          </div>
-        </article>
-
-        <article class="product">
-          <div class="product-top">
-            <h3>Taart op maat</h3>
-            <span class="price">op aanvraag</span>
-          </div>
-          <p>Smaken, formaat en design helemaal naar wens.</p>
-          <div class="pill-row">
-            <span class="pill">2–3 lagen</span>
-            <span class="pill">Foto/Topper</span>
-            <span class="pill">Allergie info</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Custom order -->
-    <section id="custom" class="section">
-      <div class="section-head">
-        <h2>Bestellen</h2>
-        <p>Stuur je wensen door — wij reageren zo snel mogelijk.</p>
-      </div>
-
-      <div class="grid-2">
-        <form class="form" action="#" method="post">
-          <label>
-            Naam
-            <input type="text" placeholder="Jouw naam" required />
-          </label>
-
-          <label>
-            E-mail
-            <input type="email" placeholder="jij@mail.com" required />
-          </label>
-
-          <label>
-            Wat wil je bestellen?
-            <select required>
-              <option value="">Kies een product</option>
-              <option>Cookie Box</option>
-              <option>Mini Cheesecake Cups</option>
-              <option>Cupcakes (Thema)</option>
-              <option>Taart op maat</option>
-            </select>
-          </label>
-
-          <label>
-            Datum (afhalen/leveren)
-            <input type="date" required />
-          </label>
-
-          <label>
-            Bericht (smaken, thema, allergieën)
-            <textarea rows="5" placeholder="Bijv. 12 cupcakes, kleur beige/roze, tekst: 'Happy Birthday'"></textarea>
-          </label>
-
-          <button class="btn" type="submit">Verstuur aanvraag</button>
-          <p class="muted tiny">
-            *Dit formulier is een demo (zonder backend). Wil je dat het echt werkt (naar e-mail/WhatsApp)?
-            Zeg het, dan maak ik het met een simpele oplossing.
-          </p>
-        </form>
-
-        <div class="panel highlight">
-          <h3>Hoe werkt het?</h3>
-          <ol class="steps">
-            <li>Stuur je aanvraag met datum + wensen</li>
-            <li>Je krijgt prijs & bevestiging</li>
-            <li>Wij bakken & jij haalt af (of levering)</li>
-          </ol>
-
-          <div class="note">
-            <strong>Tip:</strong> Voor custom taarten: bestel liefst 5–7 dagen van tevoren.
-          </div>
+      <article class="card">
+        <div class="img-wrap">
+          <img src="images/msemen-naturel.avif" alt="Msemen Naturel">
+          <span class="tag">Msemen</span>
         </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section id="reviews" class="section alt">
-      <div class="section-head">
-        <h2>Reviews</h2>
-        <p>Wat klanten zeggen (voorbeeldtekst).</p>
-      </div>
-
-      <div class="quotes">
-        <figure class="quote">
-          <blockquote>“De cookies waren zó zacht en perfect zoet. Echt vers!”</blockquote>
-          <figcaption>— Amina</figcaption>
-        </figure>
-
-        <figure class="quote">
-          <blockquote>“Cheesecake cups waren een hit op het feestje. Mooie verpakking ook.”</blockquote>
-          <figcaption>— Sara</figcaption>
-        </figure>
-
-        <figure class="quote">
-          <blockquote>“Super lief contact en precies het thema dat ik wilde.”</blockquote>
-          <figcaption>— Nadia</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="section-head">
-        <h2>Contact</h2>
-        <p>Stuur een berichtje via Instagram/WhatsApp of mail.</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="panel">
-          <h3>Gegevens</h3>
-          <p><strong>Instagram:</strong> @jouwiebakes</p>
-          <p><strong>WhatsApp:</strong> +31 6 12345678</p>
-          <p><strong>E-mail:</strong> hello@jouwiebakes.nl</p>
-          <p class="muted tiny">Vervang dit met jouw echte info.</p>
+        <h3>Msemen Naturel</h3>
+        <p>Zacht & perfect met honing of thee.</p>
+        <div class="card-bottom">
+          <span class="price">€3,00</span>
+          <button class="order-btn"
+            data-product="Msemen Naturel"
+            data-price="€3,00">Bestel via WhatsApp</button>
         </div>
+      </article>
 
-        <div class="panel highlight">
-          <h3>Locatie</h3>
-          <p>Den Haag (afhalen op afspraak)</p>
-          <div class="map-placeholder" aria-label="Kaart placeholder">
-            <span>🗺️ Voeg hier later Google Maps toe</span>
-          </div>
+      <article class="card">
+        <div class="img-wrap">
+          <img src="images/msemen-kip.jpg" alt="Msemen Kip">
+          <span class="tag">Msemen</span>
         </div>
-      </div>
-    </section>
-  </main>
+        <h3>Msemen Kip</h3>
+        <p>Hartig gevuld met kruidige kip.</p>
+        <div class="card-bottom">
+          <span class="price">€4,50</span>
+          <button class="order-btn"
+            data-product="Msemen Kip"
+            data-price="€4,50">Bestel via WhatsApp</button>
+        </div>
+      </article>
 
-  <!-- Footer -->
+      <article class="card">
+        <div class="img-wrap">
+          <img src="images/msemen-vega.jpg" alt="Msemen Vega">
+          <span class="tag">Msemen</span>
+        </div>
+        <h3>Msemen Vega</h3>
+        <p>Groenten & heerlijke kruiden.</p>
+        <div class="card-bottom">
+          <span class="price">€4,50</span>
+          <button class="order-btn"
+            data-product="Msemen Vega"
+            data-price="€4,50">Bestel via WhatsApp</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img-wrap">
+          <img src="images/cheesecake-pistache.jpg" alt="Cheesecake Pistache">
+          <span class="tag">Cheesecake</span>
+        </div>
+        <h3>Cheesecake Pistache</h3>
+        <p>Creamy & luxe pistache smaak.</p>
+        <div class="card-bottom">
+          <span class="price">v.a. €24,00</span>
+          <button class="order-btn"
+            data-product="Cheesecake Pistache"
+            data-price="v.a. €24,00">Bestel via WhatsApp</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img-wrap">
+          <img src="images/cheesecake-framboos.jpg" alt="Cheesecake Framboos">
+          <span class="tag">Cheesecake</span>
+        </div>
+        <h3>Cheesecake Framboos</h3>
+        <p>Perfecte balans tussen zoet & fris.</p>
+        <div class="card-bottom">
+          <span class="price">v.a. €24,00</span>
+          <button class="order-btn"
+            data-product="Cheesecake Framboos"
+            data-price="v.a. €24,00">Bestel via WhatsApp</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section light">
+    <div class="section-head">
+      <h2>Foto’s</h2>
+      <p>Klik op een foto om ‘m groot te bekijken.</p>
+    </div>
+
+    <div class="gallery">
+      <img class="gallery-img" src="images/gallery-1.png" alt="Gallery foto 1">
+      <img class="gallery-img" src="images/gallery-2.png" alt="Gallery foto 2">
+      <img class="gallery-img" src="images/gallery-3.png" alt="Gallery foto 3">
+      <img class="gallery-img" src="images/gallery-4.png" alt="Gallery foto 4">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="section-head">
+      <h2>Contact</h2>
+      <p>Afhalen in Leiden (op afspraak). Stuur een berichtje ❤️</p>
+    </div>
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <h3>📍 Locatie</h3>
+        <p>Leiden</p>
+        <p class="muted">Afhalen op afspraak</p>
+      </div>
+      <div class="contact-card">
+        <h3>📱 WhatsApp</h3>
+        <p>06-12345678</p>
+        <a class="btn btn-small" href="https://wa.me/31612345678" target="_blank" rel="noreferrer">Open WhatsApp</a>
+      </div>
+      <div class="contact-card">
+        <h3>📸 Instagram</h3>
+        <p>@hajarskitchen</p>
+        <a class="btn btn-small btn-ghost" href="#" onclick="return false;">Open Instagram</a>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer">
-    <p>© <span id="year"></span> Jouwie Bakes • Alle rechten voorbehouden</p>
+    <p>© <span id="year"></span> Hajar's Kitchen — Leiden</p>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Terug naar boven">↑</button>
+
+  <!-- Lightbox -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Sluiten">✕</button>
+    <img class="lightbox-img" src="" alt="Vergrote afbeelding">
+  </div>
+
+  <script src="website.js"></script>
 </body>
 </html>
